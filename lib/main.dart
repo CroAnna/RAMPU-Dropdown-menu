@@ -6,7 +6,6 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -18,7 +17,6 @@ class MyApp extends StatelessWidget {
 
 class RootPage extends StatefulWidget {
   const RootPage({super.key});
-
   @override
   State<RootPage> createState() => _RootPageState();
 }
@@ -52,6 +50,8 @@ class _DropDownState extends State<DropDown> {
     return DropdownButton(
         value: dropdownValue,
         icon: const Icon(Icons.arrow_drop_down),
+        iconEnabledColor: Colors.amber.shade600,
+        iconSize: 50,
         items: const [
           DropdownMenuItem(
             value: "Home",
